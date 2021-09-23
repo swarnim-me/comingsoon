@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("./Assets/Montserrat-Thin.ttf");
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(54, 54, 54, 0.897);
+  position: relative;
+  z-index: 10;
+}
+
+.content {
+  text-align: center;
+}
+
+.content img {
+  width: 200px;
+}
+
+#type h1 {
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  font-family: "montserrat";
+  font-size: 5rem;
+}
+
+video {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  position: -1;
+  object-fit: cover;
+}
+
+@media (max-width: 772px) {
+  .content img {
+    width: 100px;
+  }
+  #type h1 {
+    font-size: 4rem;
+  }
+}
